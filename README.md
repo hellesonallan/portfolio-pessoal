@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# 🌐 Portfólio Pessoal — Desenvolvido em React/Next.js
 
-## Project info
+Bem-vindo ao meu **Portfólio Pessoal**, um site moderno e responsivo desenvolvido com **React** e **Next.js**, criado para apresentar minhas habilidades, formações, experiências e projetos.  
+O projeto também inclui **integração com uma API pública**, demonstrando o uso de requisições externas e exibição dinâmica de dados.
 
-**URL**: https://lovable.dev/projects/0c797e1a-8214-4e9d-9d7b-798f74cb2f82
+---
 
-## How can I edit this code?
+## 🚀 Tecnologias Utilizadas
 
-There are several ways of editing your application.
+- **Next.js** — Framework React para renderização do lado do servidor (SSR) e geração de sites estáticos.
+- **React** — Biblioteca JavaScript para criação de interfaces dinâmicas e componentizadas.
+- **Tailwind CSS** — Framework utilitário para estilização rápida e responsiva.
+- **Axios / Fetch API** — Consumo de APIs externas.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0c797e1a-8214-4e9d-9d7b-798f74cb2f82) and start prompting.
+## 📂 Estrutura de Páginas
 
-Changes made via Lovable will be committed automatically to this repo.
+| Página                       | Descrição                                                                                                                |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Home**                     | Apresentação pessoal com nome, foto, e links para as demais páginas.                                                     |
+| **Sobre**                    | Lista das tecnologias utilizadas e breve descrição do objetivo do portfólio.                                             |
+| **Experiência Acadêmica**    | Cursos, formações e certificações organizadas em timeline.                                                               |
+| **Experiência Profissional** | Histórico de cargos e empresas, com descrições e períodos.                                                               |
+| **Projetos Desenvolvidos**   | Exibição de projetos com imagens, descrições e links para GitHub/demo. Também inclui integração com uma **API pública**. |
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🎨 Design e Estilo
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Layout **moderno**, **responsivo** e **intuitivo**.
+- Paleta de cores inspirada em temas **escuros com detalhes vibrantes** (ex: azul, roxo, verde neon).
+- Efeitos **hover** e **animações** sutis em botões e cards.
+- Tipografia limpa e legível.
+- Suporte a **modo claro/escuro (dark mode)** _(opcional)_.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## ⚙️ Como Executar o Projeto
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🔧 Pré-requisitos
 
-# Step 3: Install the necessary dependencies.
-npm i
+Certifique-se de ter instalado:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+- [Node.js](https://nodejs.org/) (versão 16 ou superior)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+
+### 🧭 Passos para Rodar Localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/portfolio-next.git
+
+# Acesse o diretório do projeto
+cd portfolio-next
+
+# Instale as dependências
+npm install
+# ou
+yarn install
+
+# Execute o servidor de desenvolvimento
 npm run dev
+# ou
+yarn dev
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0c797e1a-8214-4e9d-9d7b-798f74cb2f82) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+O site estará disponível em:
+👉 http://localhost:3000
