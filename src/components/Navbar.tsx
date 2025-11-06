@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2 font-bold text-xl">
             <Code2 className="w-6 h-6 text-primary" />
-            <span className="gradient-text">Portfolio</span>
+            <span className="gradient-text">Helleson</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -32,17 +32,12 @@ const Navbar = () => {
                 key={item.path}
                 to={item.path}
                 className={`text-sm font-medium transition-colors hover:text-primary ${
-                  isActive(item.path)
-                    ? "text-primary"
-                    : "text-muted-foreground"
+                  isActive(item.path) ? "text-primary" : "text-muted-foreground"
                 }`}
               >
                 {item.name}
               </Link>
             ))}
-            <Button size="sm" className="ml-4">
-              Contato
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -73,9 +68,6 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Button size="sm" className="w-full mt-4">
-              Contato
-            </Button>
           </div>
         )}
       </div>

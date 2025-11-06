@@ -10,26 +10,30 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
-      {/* Hero Section */}
+
+      {/* Seção Principal */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 z-0 opacity-20"
           style={{
             backgroundImage: `url(${heroImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/50 to-background z-0" />
-        
+
         <div className="section-container relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+              Helleson <span className="gradient-text">Allan</span>
+            </h1>
+            <h1 className="text-2xl md:text-4xl font-bold mb-6 leading-tight">
               Desenvolvedor <span className="gradient-text">Full Stack</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              Criando soluções digitais inovadoras com código limpo e design moderno
+              Criando soluções digitais inovadoras com código limpo e design
+              moderno
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
@@ -46,7 +50,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Seção de Features */}
       <section className="py-20 bg-card/50">
         <div className="section-container">
           <div className="grid md:grid-cols-3 gap-8">
@@ -57,31 +61,40 @@ const Index = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Código Limpo</h3>
                 <p className="text-muted-foreground">
-                  Desenvolvimento seguindo as melhores práticas e padrões da indústria.
+                  Desenvolvimento seguindo as melhores práticas e padrões da
+                  indústria.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="hover-lift animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            <Card
+              className="hover-lift animate-fade-in"
+              style={{ animationDelay: "0.1s" }}
+            >
               <CardContent className="pt-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Sparkles className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Design Moderno</h3>
                 <p className="text-muted-foreground">
-                  Interfaces intuitivas e responsivas com foco na experiência do usuário.
+                  Interfaces intuitivas e responsivas com foco na experiência do
+                  usuário.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="hover-lift animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <Card
+              className="hover-lift animate-fade-in"
+              style={{ animationDelay: "0.2s" }}
+            >
               <CardContent className="pt-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Briefcase className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Soluções Completas</h3>
                 <p className="text-muted-foreground">
-                  Do conceito ao deploy, desenvolvimento full-stack de ponta a ponta.
+                  Do conceito ao deploy, desenvolvimento full-stack de ponta a
+                  ponta.
                 </p>
               </CardContent>
             </Card>
@@ -89,7 +102,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Seção de Contato */}
       <section className="py-20">
         <div className="section-container">
           <Card className="bg-gradient-to-r from-primary to-accent text-primary-foreground">

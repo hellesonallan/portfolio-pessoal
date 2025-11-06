@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Star } from "lucide-react";
@@ -26,11 +32,12 @@ const Projects = () => {
   useEffect(() => {
     const fetchGitHubRepos = async () => {
       try {
-        // Using a popular GitHub user as example - replace with your username
-        const response = await fetch("https://api.github.com/users/vercel/repos?sort=stars&per_page=6");
-        
+        const response = await fetch(
+          "https://api.github.com/users/hellesonallan/repos?per_page=100&sort=updated"
+        );
+
         if (!response.ok) throw new Error("Failed to fetch repositories");
-        
+
         const data = await response.json();
         setRepos(data);
         toast({
@@ -61,7 +68,8 @@ const Projects = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Projetos</h1>
             <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mb-4"></div>
             <p className="text-muted-foreground mb-12">
-              Alguns dos projetos que desenvolvi. Dados integrados via GitHub API.
+              Alguns dos projetos que desenvolvi. Dados integrados via GitHub
+              API.
             </p>
           </div>
 
@@ -114,15 +122,28 @@ const Projects = () => {
                       </div>
                     </div>
                     <div className="flex gap-2">
-                      <Button size="sm" variant="outline" className="flex-1" asChild>
-                        <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="flex-1"
+                        asChild
+                      >
+                        <a
+                          href={repo.html_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <Github className="w-4 h-4 mr-2" />
                           Código
                         </a>
                       </Button>
                       {repo.homepage && (
                         <Button size="sm" className="flex-1" asChild>
-                          <a href={repo.homepage} target="_blank" rel="noopener noreferrer">
+                          <a
+                            href={repo.homepage}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <ExternalLink className="w-4 h-4 mr-2" />
                             Demo
                           </a>
